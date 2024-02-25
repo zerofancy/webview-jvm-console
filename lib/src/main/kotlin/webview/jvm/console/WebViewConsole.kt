@@ -46,6 +46,9 @@ object WebViewConsole {
         if (os == "linux" && arch == "amd64") {
             return ExecutableFile("linux-amd64", "console-webview-linux")
         }
+        if (os == "mac os x" && arch == "aarch64") {
+            return ExecutableFile("macosx-aarch64", "console-webview-macos")
+        }
 
         return null
     }
